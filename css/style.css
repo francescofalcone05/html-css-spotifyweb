@@ -1,5 +1,102 @@
+/*************** COMMON/CONTAINER *************/
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.relative{
+    position: relative;
+}
+
+
+
+
+/************* HEADER *************/
+
+.nav-bar{
+    background-color: black;
+    height: calc(100vh - 5rem);
+    width: 12rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav-bar>.container{
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    color: gray;
+    font-size: 0.6rem;
+}
+
+.nav-bar>.container>img{
+    width: auto;
+    height: 2rem;
+    margin-top: 0.5rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/************* MAIN *************/
+
+main{
+    flex-direction: column;
+    justify-content: right;
+    margin-left: 12rem;
+}
+.upgrade{
+    background-color: rgb(48, 47, 47);
+    height: 3rem;
+    width: 100%
+}
+
+.upgrade>.container{
+    width: 100%;
+    height: 100%;
+    text-align: end;
+    
+}
+
+.upgrade button{
+    color: white;
+    background-color:rgb(48, 47, 47) ;
+    border-color: white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0.5rem;
+    font-size: 0.7rem;
+}
+
+.album{
+    background-color: rgb(18, 18, 44);
+    height: calc(100vh - 8rem);
+    width: 100%;
+    overflow: auto;
+}
+
+
+
+/************* FOOTER *************/
+
+.music-bar{
+    background-color: rgb(104, 103, 103);
+    height: 5rem;
+}
+
+
+
+/************* RESPONSIVE *************/
