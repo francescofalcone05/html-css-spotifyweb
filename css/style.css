@@ -20,6 +20,10 @@ body{
     position: relative;
 }
 
+.overflow{
+    overflow: auto;
+}
+
 
 
 
@@ -27,15 +31,14 @@ body{
 
 .nav-bar{
     background-color: black;
-    height: calc(100vh - 5rem);
+    height: 100%;
     width: 12rem;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: calc(100vh - 5rem)
+
 }
 
 .nav-bar>.container{
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     color: gray;
     font-size: 0.6rem;
     height: 100%;
@@ -104,7 +107,8 @@ body{
 main{
     flex-direction: column;
     justify-content: right;
-    margin-left: 12rem;
+    width: calc(100% - 12rem);
+    height: calc(100vh - 5rem)
 }
 .upgrade{
     background-color: rgb(27, 27, 27);
@@ -130,7 +134,7 @@ main{
 
 .album{
     background-color: rgb(18, 18, 44);
-    height: calc(100vh - 8rem);
+    height: 100%;
     width: 100%;
     overflow: auto;
 }
@@ -181,7 +185,7 @@ main{
     }
     
     main{
-        margin-left: 4rem;
+        width: calc(100% - 4rem);
     }
 
     .big-logo{
