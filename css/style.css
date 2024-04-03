@@ -21,7 +21,7 @@ body{
 }
 
 .overflow{
-    overflow: auto;
+    /* overflow: auto; */
     height: calc(100vh - 5rem);
 }
 
@@ -34,6 +34,7 @@ body{
     background-color: black;
     height: 100%;
     width: 12rem;
+    overflow: auto;
 }
 
 .nav-bar>.container{
@@ -76,6 +77,18 @@ body{
     font-size: 1rem;
 }
 
+.nav-bar>.container .home:hover{
+    color: white;
+}
+
+.nav-bar>.container .cerca:hover{
+    color: white;
+}
+
+.nav-bar>.container .libreria:hover{
+    color: white;
+}
+
 
 .nav-bar>.container h3{
     margin: 1.5rem 0 1rem 0;
@@ -84,6 +97,10 @@ body{
 .nav-bar>.container .playlist>span{
     display: block;
     margin: 0.5rem 0;
+}
+
+.nav-bar>.container .playlist>span:hover{
+    color: white;
 }
 
 .playlist{
@@ -103,6 +120,14 @@ body{
 
 .bottom-bar .little-i{
     transform: scale(0.8);
+}
+
+.download:hover{
+    color: white;
+}
+
+.profile:hover{
+    color: white;
 }
 
 /************* MAIN *************/
@@ -187,8 +212,24 @@ main{
     margin: 2rem 0.5rem;
 }
 
-.card-container>.card>img{
+.card-container>.card>.immagine>img{
     width: 100%;
+}
+
+.immagine>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 4rem;
+    display: none;
+}
+
+/* to be fixed */
+.immagine>i:hover{
+    display: unset;
+    z-index: 99;
 }
 
 .card-container>.card>h3{
@@ -245,6 +286,9 @@ main{
     font-size: 0.8rem;
 }
 
+.left-footer i:hover{
+    color: green;
+}
 
 .center-footer{
     width: 50%;    
@@ -255,6 +299,10 @@ main{
 .track-icons>i{
     margin: 0.5rem 1rem;
     font-size: 1.4rem;
+}
+
+.track-icons>i:hover{
+    color: green;
 }
 
 .center-footer hr{
@@ -283,6 +331,10 @@ main{
     margin: 0 0.3rem;
     margin-top: 0.5rem;
     font-size: 0.8rem;
+}
+
+.right-footer>i:hover{
+    color: green;
 }
 
 .right-footer>hr{
@@ -340,6 +392,10 @@ main{
     .left-footer>img{
         width: 2rem;
         height: 2rem;
+    }
+
+    .in-play{
+        margin: 0 0.5rem;
     }
 
     .center-footer hr{
@@ -418,6 +474,15 @@ main{
 
 
     .right-footer>hr{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-height: 351px) {
+
+    .playlist{
         display: none;
     }
 }
