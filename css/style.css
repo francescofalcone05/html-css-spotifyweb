@@ -183,8 +183,7 @@ main{
     height: 1rem;
     text-align: center;
     border-bottom: transparent 1px solid;
-
-
+    white-space: nowrap;
 }
 .generi:hover{
     border-bottom: yellow 1px solid;
@@ -226,10 +225,9 @@ main{
     display: none;
 }
 
-/* to be fixed */
-.immagine>i:hover{
-    display: unset;
-    z-index: 99;
+
+.immagine:hover i{
+    display: block;
 }
 
 .card-container>.card>h3{
@@ -480,9 +478,11 @@ main{
 
 
 
-@media screen and (max-height: 351px) {
 
-    .playlist{
+@media screen and (max-height: 400px) {
+
+
+    .nav-bar>.container .playlist>span{
         display: none;
     }
 }
