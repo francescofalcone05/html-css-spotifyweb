@@ -303,13 +303,21 @@ main{
     color: green;
 }
 
-.center-footer hr{
+/* .center-footer hr{
     width: 65%;
     height: 0.3rem;
     margin: 0.2rem auto;
     display: inline-block;
     background-color: gray;
     border-radius: 30px;
+} */
+
+.center-footer input[type="range"] {
+    width: 65%;
+    height: 0.3rem;
+    margin: 0.2rem auto;
+    display: inline-block;
+    background-color: gray;
 }
 
 .center-footer span{
@@ -335,7 +343,7 @@ main{
     color: green;
 }
 
-.right-footer>hr{
+.right-footer>input[type="range"] {
     width: 25%;
     height: 0.3rem;
     display: inline-block;
@@ -396,12 +404,13 @@ main{
         margin: 0 0.5rem;
     }
 
-    .center-footer hr{
+    .center-footer input[type="range"] {
         width: 45%;
     }
 
     .center-footer span{
         margin: 0 0.5rem;
+        font-size: 0.7rem;
     }
 
     .track-icons>i{
@@ -409,8 +418,8 @@ main{
         font-size: 1rem;
     }
 
-    .right-footer>hr{
-        width: 15%;
+    .right-footer>input[type="range"] {
+        display: none;
     }
 
 }
@@ -470,10 +479,13 @@ main{
         display: none;
     }
 
-
-    .right-footer>hr{
-        display: none;
+    .center-footer span{
+        margin: 0 0.4rem;
+        font-size: 0.6rem;
     }
+
+
+
 }
 
 
